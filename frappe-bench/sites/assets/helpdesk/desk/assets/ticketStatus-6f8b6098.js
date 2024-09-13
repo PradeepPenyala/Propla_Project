@@ -1,0 +1,2 @@
+import{aj as s,v as a,N as l}from"./index-a86022ab.js";const i=s("ticketStatus",()=>{const e=a(["Open","Replied","Resolved","Closed"]),o=l(()=>e.value.map(t=>({label:t,value:t})));return{colorMap:{Open:"red",Replied:"blue",Resolved:"green",Closed:"gray"},dropdown:o,options:e,stateActive:["Open","Replied"],stateInactive:["Resolved","Closed"],textColorMap:{Open:"text-red-600",Replied:"text-blue-600",Resolved:"text-green-700",Closed:"text-gray-700"}}});export{i as u};
+//# sourceMappingURL=ticketStatus-6f8b6098.js.map

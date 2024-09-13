@@ -1,0 +1,2 @@
+import{o as e,i as t,f as o}from"./index-a86022ab.js";const c={xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":"1.5","stroke-linecap":"round","stroke-linejoin":"round"},r=o("circle",{cx:"12",cy:"12",r:"1"},null,-1),n=o("circle",{cx:"19",cy:"12",r:"1"},null,-1),s=o("circle",{cx:"5",cy:"12",r:"1"},null,-1),i=[r,n,s];function l(a,d){return e(),t("svg",c,[...i])}const _={name:"lucide-more-horizontal",render:l};export{_ as I};
+//# sourceMappingURL=more-horizontal-b738918e.js.map

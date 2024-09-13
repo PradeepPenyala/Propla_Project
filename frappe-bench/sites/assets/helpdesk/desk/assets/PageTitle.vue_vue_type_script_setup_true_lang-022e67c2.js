@@ -1,0 +1,2 @@
+import{d as r,o as s,i as a,f as i,aa as o,q as n,S as l}from"./index-a86022ab.js";const c={class:"border-b px-5 py-2.5"},d={class:"flex items-center justify-between"},m={key:0,class:"text-lg font-medium text-gray-900"},_=r({__name:"PageTitle",props:{title:{type:String,required:!1,default:""}},setup(e){return(t,f)=>(s(),a("header",c,[i("div",d,[o(t.$slots,"title",{},()=>[e.title?(s(),a("div",m,n(e.title),1)):l("",!0)]),o(t.$slots,"right")])]))}});export{_};
+//# sourceMappingURL=PageTitle.vue_vue_type_script_setup_true_lang-022e67c2.js.map

@@ -1,0 +1,2 @@
+import{o as e,i as t,f as o}from"./index-a86022ab.js";const n={xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":"1.5","stroke-linecap":"round","stroke-linejoin":"round"},s=o("path",{d:"M18 6 6 18"},null,-1),r=o("path",{d:"m6 6 12 12"},null,-1),c=[s,r];function i(l,d){return e(),t("svg",n,[...c])}const h={name:"lucide-x",render:i};export{h as I};
+//# sourceMappingURL=x-948a4c6e.js.map

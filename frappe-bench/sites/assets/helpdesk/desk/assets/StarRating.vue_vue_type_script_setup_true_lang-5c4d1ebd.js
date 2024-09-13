@@ -1,0 +1,7 @@
+import{d as o,o as l,i as n,F as i,r as c,f as s,n as p}from"./index-a86022ab.js";const g={class:"flex w-max flex-row-reverse gap-1"},m=["onClick"],w=s("path",{d:`M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
+          c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042
+          c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685
+          c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528
+          c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956
+          C22.602,0.567,25.338,0.567,26.285,2.486z`},null,-1),d=[w],v=o({__name:"StarRating",props:{rating:{},static:{type:Boolean,default:!0}},emits:["update:rating"],setup(h,{emit:r}){const a=r;return(e,f)=>(l(),n("div",g,[(l(),n(i,null,c([1,.8,.6,.4,.2],t=>s("svg",{key:t,class:p(["-all peer fill-gray-300",{"fill-yellow-400":t<=e.rating,"cursor-pointer":!e.static,"hover:fill-yellow-300":t>e.rating&&!e.static,"peer-hover:fill-yellow-300":t>e.rating&&!e.static}]),height:"16px",width:"16px",version:"1.1",xmlns:"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink",viewBox:"0 0 47.94 47.94","xml:space":"preserve",onClick:u=>a("update:rating",t)},d,10,m)),64))]))}});export{v as _};
+//# sourceMappingURL=StarRating.vue_vue_type_script_setup_true_lang-5c4d1ebd.js.map
