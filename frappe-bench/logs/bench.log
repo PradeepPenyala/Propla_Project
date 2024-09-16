@@ -699,3 +699,4 @@
 2024-09-14 15:27:57,060 INFO /home/mbr-python/.local/bin/bench worker
 2024-09-14 15:27:57,090 INFO /home/mbr-python/.local/bin/bench watch
 2024-09-14 15:27:57,100 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-14 18:00:01,880 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
