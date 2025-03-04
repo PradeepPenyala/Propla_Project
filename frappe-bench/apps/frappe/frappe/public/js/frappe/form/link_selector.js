@@ -87,6 +87,25 @@ frappe.ui.form.LinkSelector = class LinkSelector {
 			this.doctype,
 			args,
 			function (results) {
+				 var style = document.createElement("style");
+					style.type = "text/css";
+					style.innerHTML = `
+						.link-select-row {
+							padding: 10px;
+							border-bottom: 1px solid #ddd;
+						}
+						.link-select-row:hover {
+							background-color: #f0f0f0;
+						}
+						.scrollable-text {
+							overflow: auto; /* Allow scrolling */
+							white-space: nowrap;
+							width: 100%; /* Full width */
+							max-width: 100%; /* Prevent overflow */
+							max-height: 50px; /* Optional fixed height */
+						}
+					`;
+					document.head.appendChild(style);
 				var parent = me.dialog.fields_dict.results.$wrapper;
 				if (args.start === 0) {
 					parent.empty();
@@ -97,9 +116,9 @@ frappe.ui.form.LinkSelector = class LinkSelector {
 						var row = $(
 							repl(
 								'<div class="row link-select-row">\
-						<div class="col-xs-4">\
+						<div class="col-md-6 col-xs-4 scrollable-text"">\
 							<b><a href="#">%(name)s</a></b></div>\
-						<div class="col-xs-8">\
+						<div class="col-md-6 col-xs-8 scrollable-text"">\
 							<span class="text-muted">%(values)s</span></div>\
 						</div>',
 								{

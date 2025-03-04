@@ -1,0 +1,72 @@
+Traceback with variables (most recent call last):
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 81, in process_setup_stages
+    task.get("fn")(task.get("args"))
+      stages = [{'status': 'Updating global settings', 'fail_msg': 'Failed to update global settings', 'tasks': [{'fn': <function update_global_settings at 0x7f92934cf600>, 'args': {'language': 'English', 'country': 'India', 'timezone': 'Asia/Kolkata', 'currency': 'INR', 'full_name': 'Bizpro', 'email': 'bizpro@gmail.com', 'password': 'Mbr@123', 'company_name': 'Bizpro', 'company_abbr': 'B', 'chart_of_accounts': 'India - Chart of Accounts', 'fy_start_date': '2024-04-01', 'fy_end_date': '2025-03-31', 'setup_demo': 0}, 'fail_msg': 'Failed to update global settings'}]}, {'status': 'Wrapping up', 'fail_msg': 'Failed to login', 'tasks': [{'fn': <function fin at 0x7f92919eb9c0>, 'args': {'language': 'English', 'country': 'India', 'timezone': 'Asia/Kolkata', 'currency': 'INR', 'full_name': 'Bizpro', 'email': 'bizpro@gmail.com', 'password': 'Mbr@123', 'company_name': 'Bizpro', 'company_abbr': 'B', 'chart_of_accounts': 'India - Chart of Accounts', 'fy_start_date': '2024-04-01', 'fy_end_date': '2025-03-31', 'se...
+      user_input = {'language': 'English', 'country': 'India', 'timezone': 'Asia/Kolkata', 'currency': 'INR', 'full_name': 'Bizpro', 'email': 'bizpro@gmail.com', 'password': '********', 'company_name': 'Bizpro', 'company_abbr': 'B', 'chart_of_accounts': 'India - Chart of Accounts', 'fy_start_date': '2024-04-01', 'fy_end_date': '2025-03-31', 'setup_demo': 0}
+      is_background_task = False
+      capture = <function capture at 0x7f92999a9300>
+      current_task = {'fn': <function fin at 0x7f92919eb9c0>, 'args': {'language': 'English', 'country': 'India', 'timezone': 'Asia/Kolkata', 'currency': 'INR', 'full_name': 'Bizpro', 'email': 'bizpro@gmail.com', 'password': 'Mbr@123', 'company_name': 'Bizpro', 'company_abbr': 'B', 'chart_of_accounts': 'India - Chart of Accounts', 'fy_start_date': '2024-04-01', 'fy_end_date': '2025-03-31', 'setup_demo': 0}, 'fail_msg': 'Failed to login'}
+      idx = 1
+      stage = {'status': 'Wrapping up', 'fail_msg': 'Failed to login', 'tasks': [{'fn': <function fin at 0x7f92919eb9c0>, 'args': {'language': 'English', 'country': 'India', 'timezone': 'Asia/Kolkata', 'currency': 'INR', 'full_name': 'Bizpro', 'email': 'bizpro@gmail.com', 'password': 'Mbr@123', 'company_name': 'Bizpro', 'company_abbr': 'B', 'chart_of_accounts': 'India - Chart of Accounts', 'fy_start_date': '2024-04-01', 'fy_end_date': '2025-03-31', 'setup_demo': 0}, 'fail_msg': 'Failed to login'}]}
+      task = {'fn': <function fin at 0x7f92919eb9c0>, 'args': {'language': 'English', 'country': 'India', 'timezone': 'Asia/Kolkata', 'currency': 'INR', 'full_name': 'Bizpro', 'email': 'bizpro@gmail.com', 'password': 'Mbr@123', 'company_name': 'Bizpro', 'company_abbr': 'B', 'chart_of_accounts': 'India - Chart of Accounts', 'fy_start_date': '2024-04-01', 'fy_end_date': '2025-03-31', 'setup_demo': 0}, 'fail_msg': 'Failed to login'}
+  File "apps/erpnext/erpnext/setup/setup_wizard/setup_wizard.py", line 64, in fin
+    login_as_first_user(args)
+      args = {'language': 'English', 'country': 'India', 'timezone': 'Asia/Kolkata', 'currency': 'INR', 'full_name': 'Bizpro', 'email': 'bizpro@gmail.com', 'password': '********', 'company_name': 'Bizpro', 'company_abbr': 'B', 'chart_of_accounts': 'India - Chart of Accounts', 'fy_start_date': '2024-04-01', 'fy_end_date': '2025-03-31', 'setup_demo': 0}
+  File "apps/erpnext/erpnext/setup/setup_wizard/setup_wizard.py", line 74, in login_as_first_user
+    frappe.local.login_manager.login_as(args.get("email"))
+      args = {'language': 'English', 'country': 'India', 'timezone': 'Asia/Kolkata', 'currency': 'INR', 'full_name': 'Bizpro', 'email': 'bizpro@gmail.com', 'password': '********', 'company_name': 'Bizpro', 'company_abbr': 'B', 'chart_of_accounts': 'India - Chart of Accounts', 'fy_start_date': '2024-04-01', 'fy_end_date': '2025-03-31', 'setup_demo': 0}
+  File "apps/frappe/frappe/auth.py", line 330, in login_as
+    self.post_login()
+      self = <frappe.auth.LoginManager object at 0x7f92935fbf10>
+      user = 'bizpro@gmail.com'
+  File "apps/frappe/frappe/auth.py", line 154, in post_login
+    self.make_session()
+      self = <frappe.auth.LoginManager object at 0x7f92935fbf10>
+  File "apps/frappe/frappe/auth.py", line 205, in make_session
+    frappe.local.session_obj = Session(
+      self = <frappe.auth.LoginManager object at 0x7f92935fbf10>
+      resume = False
+  File "apps/frappe/frappe/sessions.py", line 218, in __init__
+    self.validate_user()
+      self = <frappe.sessions.Session object at 0x7f92918a3160>
+      user = 'bizpro@gmail.com'
+      resume = False
+      full_name = 'Administrator'
+      user_type = 'System User'
+  File "apps/frappe/frappe/sessions.py", line 223, in validate_user
+    frappe.throw(
+      self = <frappe.sessions.Session object at 0x7f92918a3160>
+  File "apps/frappe/frappe/__init__.py", line 645, in throw
+    msgprint(
+      msg = 'User bizpro@gmail.com is disabled. Please contact your System Manager.'
+      exc = <class 'frappe.exceptions.ValidationError'>
+      title = None
+      is_minimizable = False
+      wide = False
+      as_list = False
+      primary_action = None
+  File "apps/frappe/frappe/__init__.py", line 610, in msgprint
+    _raise_exception()
+      msg = 'User bizpro@gmail.com is disabled. Please contact your System Manager.'
+      title = None
+      raise_exception = <class 'frappe.exceptions.ValidationError'>
+      as_table = False
+      as_list = False
+      indicator = 'red'
+      alert = False
+      primary_action = None
+      is_minimizable = False
+      wide = False
+      realtime = False
+      sys = <module 'sys' (built-in)>
+      _raise_exception = <function msgprint.<locals>._raise_exception at 0x7f92918836a0>
+      inspect = <module 'inspect' from '/usr/lib/python3.11/inspect.py'>
+      out = {'message': 'User bizpro@gmail.com is disabled. Please contact your System Manager.', 'title': 'Message', 'indicator': 'red', 'raise_exception': 1, '__frappe_exc_id': '000d60979f760b83754fb83e9cb9016529e3d6345abe287c77e83b82'}
+  File "apps/frappe/frappe/__init__.py", line 561, in _raise_exception
+    raise exc
+      exc = ValidationError('User bizpro@gmail.com is disabled. Please contact your System Manager.')
+      inspect = <module 'inspect' from '/usr/lib/python3.11/inspect.py'>
+      msg = 'User bizpro@gmail.com is disabled. Please contact your System Manager.'
+      out = {'message': 'User bizpro@gmail.com is disabled. Please contact your System Manager.', 'title': 'Message', 'indicator': 'red', 'raise_exception': 1, '__frappe_exc_id': '000d60979f760b83754fb83e9cb9016529e3d6345abe287c77e83b82'}
+      raise_exception = <class 'frappe.exceptions.ValidationError'>
+frappe.exceptions.ValidationError: User bizpro@gmail.com is disabled. Please contact your System Manager.{"language": "English", "country": "India", "timezone": "Asia/Kolkata", "currency": "INR", "full_name": "Bizpro", "email": "bizpro@gmail.com", "password": "Mbr@123", "company_name": "Bizpro", "company_abbr": "B", "chart_of_accounts": "India - Chart of Accounts", "fy_start_date": "2024-04-01", "fy_end_date": "2025-03-31", "setup_demo": 0}

@@ -1,0 +1,249 @@
+2025-02-26 12:20:43,592 INFO ipython === bench console session ===
+2025-02-26 12:20:43,592 INFO ipython === session end ===
+2025-02-26 12:29:53,253 INFO ipython === bench console session ===
+2025-02-26 12:29:53,253 INFO ipython import frappe
+guest = frappe.get_doc("User", "Guest")
+print("Guest enabled:", guest.enabled)
+2025-02-26 12:29:53,253 INFO ipython SELECT name, enabled FROM `tabUser` WHERE name = 'Guest';
+2025-02-26 12:29:53,254 INFO ipython import frappe
+
+# Create a new User document for Guest
+doc = frappe.new_doc("User")
+doc.update({
+    "name": "Guest",         # This is the unique identifier used by Frappe for the Guest user
+    "email": "guest@example.com",  # Use a dummy email if you prefer
+    "first_name": "Guest",
+    "enabled": 1,
+    "user_type": "Website User",  # Typically, the Guest is a Website User
+    "language": "en"
+})
+doc.insert(ignore_permissions=True)
+frappe.db.commit()
+
+# Assign the "Guest" role to the user
+# Check if the Guest role exists; it should be a default role.
+doc.append("roles", {"role": "Guest"})
+doc.save(ignore_permissions=True)
+frappe.db.commit()
+
+print("Guest user created and enabled.")
+2025-02-26 12:29:53,254 INFO ipython import frappe
+
+# Create a new User document for Guest
+doc = frappe.new_doc("User")
+doc.update({
+    "name": "Guest",         # This is the unique identifier used by Frappe for the Guest user
+    "email": "guest@example.com",  # Use a dummy email if you prefer
+    "first_name": "Guest",
+    "enabled": 1,
+    "user_type": "Website User",  # Typically, the Guest is a Website User
+    "language": "en"
+})
+doc.insert(ignore_permissions=True)
+frappe.db.commit()
+
+# Assign the "Guest" role to the user
+# Check if the Guest role exists; it should be a default role.
+doc.append("roles", {"role": "Guest"})
+doc.save(ignore_permissions=True)
+frappe.db.commit()
+
+print("Guest user created and enabled.")
+2025-02-26 12:29:53,254 INFO ipython print(frappe.get_all("Language", fields=["name"]))
+2025-02-26 12:29:53,254 INFO ipython import frappe
+
+doc = frappe.new_doc("User")
+doc.update({
+    "name": "Guest",  # Unique identifier
+    "email": "guest@example.com",
+    "first_name": "Guest",
+    "enabled": 1,
+    # Omit language and user_type so defaults are applied
+})
+doc.insert(ignore_permissions=True)
+frappe.db.commit()
+
+# Assign the Guest role
+doc.append("roles", {"role": "Guest"})
+doc.save(ignore_permissions=True)
+frappe.db.commit()
+
+print("Guest user created and enabled.")
+2025-02-26 12:29:53,254 INFO ipython import frappe
+
+doc = frappe.new_doc("User")
+doc.update({
+    "name": "Guest",  # Unique identifier
+    "email": "guest@example.com",
+    "first_name": "Guest",
+    "enabled": 1,
+    # Omit language and user_type so defaults are applied
+})
+doc.insert(ignore_permissions=True)
+frappe.db.commit()
+
+# Assign the Guest role
+doc.append("roles", {"role": "Guest"})
+doc.save(ignore_permissions=True)
+frappe.db.commit()
+
+print("Guest user created and enabled.")
+2025-02-26 12:29:53,254 INFO ipython import frappe
+
+doc = frappe.new_doc("User")
+doc.update({
+    "name": "Guest",  # Unique identifier for the Guest user
+    "email": "guest@example.com",
+    "first_name": "Guest",
+    "enabled": 1,
+    # Omit language and user_type to allow defaults
+})
+doc.insert(ignore_permissions=True)
+frappe.db.commit()
+
+# Assign the Guest role
+doc.append("roles", {"role": "Guest"})
+doc.save(ignore_permissions=True)
+frappe.db.commit()
+
+print("Guest user created and enabled.")
+2025-02-26 12:29:53,254 INFO ipython bench clear-cache
+bench clear-website-cache
+bench restart
+2025-02-26 12:29:53,254 INFO ipython === session end ===
+2025-02-26 14:55:40,666 INFO ipython === bench console session ===
+2025-02-26 14:55:40,667 INFO ipython import frappe
+admin = frappe.get_doc("User", "Administrator")
+admin.enabled = 1
+admin.save(ignore_permissions=True)
+frappe.db.commit()
+print("Administrator user is now enabled.")
+2025-02-26 14:55:40,667 INFO ipython === session end ===
+2025-02-26 15:09:55,399 INFO ipython === bench console session ===
+2025-02-26 15:09:55,399 INFO ipython import frappe
+
+# Create Administrator user if it doesn't exist
+try:
+    admin = frappe.get_doc("User", "Administrator")
+    print("Administrator already exists.")
+except frappe.DoesNotExistError:
+    admin = frappe.new_doc("User")
+    admin.update({
+        "name": "Administrator",           # Unique identifier
+        "email": "admin@bizpro.com",         # Use an appropriate email
+        "first_name": "Admin",
+        "enabled": 1,
+        "user_type": "System User",          # Typically, Administrator is a System User
+    })
+    admin.insert(ignore_permissions=True)
+    frappe.db.commit()
+    print("Administrator user created and enabled.")
+2025-02-26 15:09:55,400 INFO ipython import frappe
+print(frappe.get_all("User Type", fields=["name"]))
+2025-02-26 15:09:55,400 INFO ipython import frappe
+
+# Create a new User Type record for "System User"
+ut = frappe.new_doc("User Type")
+ut.update({"name": "System User"})
+ut.insert(ignore_permissions=True)
+frappe.db.commit()
+
+print("User Type 'System User' created.")
+2025-02-26 15:09:55,400 INFO ipython import frappe
+
+# Create Administrator user if it doesn't exist
+try:
+    admin = frappe.get_doc("User", "Administrator")
+    print("Administrator already exists.")
+except frappe.DoesNotExistError:
+    admin = frappe.new_doc("User")
+    admin.update({
+        "name": "Administrator",           # Unique identifier for the Administrator
+        "email": "admin@bizpro.com",         # Use an appropriate email address
+        "first_name": "Admin",
+        "enabled": 1,
+        "user_type": "System User",          # This now should validate since we've created it
+    })
+    admin.insert(ignore_permissions=True)
+    frappe.db.commit()
+    print("Administrator user created and enabled.")
+2025-02-26 15:09:55,400 INFO ipython === session end ===
+2025-02-26 15:18:51,061 INFO ipython === bench console session ===
+2025-02-26 15:18:51,062 INFO ipython import frappe
+
+# Create or update Administrator
+if not frappe.db.exists("User", "Administrator"):
+    admin = frappe.new_doc("User")
+    admin.update({
+        "name": "Administrator",
+        "email": "admin@bizpro.com",
+        "first_name": "Admin",
+        "enabled": 1,
+        "user_type": "System User",
+    })
+    admin.insert(ignore_permissions=True, ignore_links=True)
+    frappe.db.commit()
+    print("Administrator created.")
+else:
+    admin = frappe.get_doc("User", "Administrator")
+    if not admin.enabled:
+        admin.enabled = 1
+        admin.save(ignore_permissions=True)
+        frappe.db.commit()
+        print("Administrator updated to enabled.")
+    else:
+        print("Administrator already enabled.")
+2025-02-26 15:18:51,062 INFO ipython import frappe
+
+if not frappe.db.exists("User Type", "System User"):
+    ut = frappe.new_doc("User Type")
+    ut.update({
+        "name": "System User"
+    })
+    ut.insert(ignore_permissions=True)
+    frappe.db.commit()
+    print("User Type 'System User' created.")
+else:
+    print("User Type 'System User' already exists.")
+2025-02-26 15:18:51,062 INFO ipython import frappe
+
+if not frappe.db.exists("User Type", "System User"):
+    ut = frappe.new_doc("User Type")
+    ut.update({
+        "name": "System User"
+    })
+    ut.insert(ignore_permissions=True)
+    frappe.db.commit()
+    print("User Type 'System User' created.")
+else:
+    print("User Type 'System User' already exists.")
+    
+2025-02-26 15:18:51,062 INFO ipython === session end ===
+2025-02-26 15:23:08,256 INFO ipython === bench console session ===
+2025-02-26 15:23:08,256 INFO ipython import frappe
+
+if not frappe.db.exists("User Type", "System User"):
+    ut = frappe.new_doc("User Type")
+    ut.update({
+        "name": "System User"
+    })
+    ut.insert(ignore_permissions=True)
+    frappe.db.commit()
+    print("User Type 'System User' created.")
+else:
+    print("User Type 'System User' already exists.")
+    
+2025-02-26 15:23:08,256 INFO ipython import frappe
+
+if not frappe.db.exists("User Type", "System User"):
+    ut = frappe.new_doc("User Type")
+    ut.update({
+        "name": "System User"
+    })
+    ut.insert(ignore_permissions=True)
+    frappe.db.commit()
+    print("User Type 'System User' created.")
+else:
+    print("User Type 'System User' already exists.")
+    
+2025-02-26 15:23:08,256 INFO ipython === session end ===
