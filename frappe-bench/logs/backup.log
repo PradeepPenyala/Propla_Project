@@ -4437,3 +4437,83 @@ Backup Summary for newbie.com at 2025-03-03 18:00:10.444827
 Config  : ./newbie.com/private/backups/20250303_180007-newbie_com-site_config_backup.json 158.0B
 Database: ./newbie.com/private/backups/20250303_180007-newbie_com-database.sql.gz         930.1KiB
 Backup for Site newbie.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_5cc9cae4542b37bb --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5cc9cae4542b37bb | /usr/bin/gzip >> ./bizpro.com/private/backups/20250304_120004-bizpro_com-database.sql.gz
+
+Backup Summary for bizpro.com at 2025-03-04 12:00:08.240466
+Config  : ./bizpro.com/private/backups/20250304_120004-bizpro_com-site_config_backup.json 221.0B
+Database: ./bizpro.com/private/backups/20250304_120004-bizpro_com-database.sql.gz         957.9KiB
+Backup for Site bizpro.com has been successfully completed
+File ./newbie.com/private/backups/20250303_180007-newbie_com-database.sql.gz is recent
+File ./newbie.com/private/backups/20250303_120006-newbie_com-site_config_backup.json is recent
+File ./newbie.com/private/backups/20250303_120006-newbie_com-database.sql.gz is recent
+File ./newbie.com/private/backups/20250303_180007-newbie_com-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mysqldump --user=_27901665e79b2ed2 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _27901665e79b2ed2 | /usr/bin/gzip >> ./newbie.com/private/backups/20250304_120008-newbie_com-database.sql.gz
+
+Backup Summary for newbie.com at 2025-03-04 12:00:10.015221
+Config  : ./newbie.com/private/backups/20250304_120008-newbie_com-site_config_backup.json 158.0B
+Database: ./newbie.com/private/backups/20250304_120008-newbie_com-database.sql.gz         932.2KiB
+Backup for Site newbie.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_5cc9cae4542b37bb --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5cc9cae4542b37bb | /usr/bin/gzip >> ./bizpro.com/private/backups/20250304_180003-bizpro_com-database.sql.gz
+
+Backup Summary for bizpro.com at 2025-03-04 18:00:07.521764
+Config  : ./bizpro.com/private/backups/20250304_180003-bizpro_com-site_config_backup.json 221.0B
+Database: ./bizpro.com/private/backups/20250304_180003-bizpro_com-database.sql.gz         961.2KiB
+Backup for Site bizpro.com has been successfully completed
+File ./newbie.com/private/backups/20250303_180007-newbie_com-database.sql.gz is recent
+File ./newbie.com/private/backups/20250304_120008-newbie_com-database.sql.gz is recent
+File ./newbie.com/private/backups/20250303_120006-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250303_120006-newbie_com-database.sql.gz is older than 24 hours
+File ./newbie.com/private/backups/20250303_180007-newbie_com-site_config_backup.json is recent
+File ./newbie.com/private/backups/20250304_120008-newbie_com-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mysqldump --user=_27901665e79b2ed2 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _27901665e79b2ed2 | /usr/bin/gzip >> ./newbie.com/private/backups/20250304_180007-newbie_com-database.sql.gz
+
+Backup Summary for newbie.com at 2025-03-04 18:00:10.592812
+Config  : ./newbie.com/private/backups/20250304_180007-newbie_com-site_config_backup.json 158.0B
+Database: ./newbie.com/private/backups/20250304_180007-newbie_com-database.sql.gz         932.2KiB
+Backup for Site newbie.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_5cc9cae4542b37bb --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5cc9cae4542b37bb | /usr/bin/gzip >> ./bizpro.com/private/backups/20250307_120003-bizpro_com-database.sql.gz
+
+Backup Summary for bizpro.com at 2025-03-07 12:00:07.087458
+Config  : ./bizpro.com/private/backups/20250307_120003-bizpro_com-site_config_backup.json 221.0B
+Database: ./bizpro.com/private/backups/20250307_120003-bizpro_com-database.sql.gz         964.7KiB
+Backup for Site bizpro.com has been successfully completed
+File ./newbie.com/private/backups/20250303_180007-newbie_com-database.sql.gz is older than 24 hours
+File ./newbie.com/private/backups/20250304_180007-newbie_com-database.sql.gz is older than 24 hours
+File ./newbie.com/private/backups/20250304_120008-newbie_com-database.sql.gz is older than 24 hours
+File ./newbie.com/private/backups/20250304_180007-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250303_180007-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250304_120008-newbie_com-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mysqldump --user=_27901665e79b2ed2 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _27901665e79b2ed2 | /usr/bin/gzip >> ./newbie.com/private/backups/20250307_120007-newbie_com-database.sql.gz
+
+Backup Summary for newbie.com at 2025-03-07 12:00:09.397208
+Config  : ./newbie.com/private/backups/20250307_120007-newbie_com-site_config_backup.json 158.0B
+Database: ./newbie.com/private/backups/20250307_120007-newbie_com-database.sql.gz         931.9KiB
+Backup for Site newbie.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_5cc9cae4542b37bb --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5cc9cae4542b37bb | /usr/bin/gzip >> ./bizpro.com/private/backups/20250310_120005-bizpro_com-database.sql.gz
+
+Backup Summary for bizpro.com at 2025-03-10 12:00:07.182574
+Config  : ./bizpro.com/private/backups/20250310_120005-bizpro_com-site_config_backup.json 221.0B
+Database: ./bizpro.com/private/backups/20250310_120005-bizpro_com-database.sql.gz         986.3KiB
+Backup for Site bizpro.com has been successfully completed
+File ./newbie.com/private/backups/20250307_120007-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250307_120007-newbie_com-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mysqldump --user=_27901665e79b2ed2 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _27901665e79b2ed2 | /usr/bin/gzip >> ./newbie.com/private/backups/20250310_120007-newbie_com-database.sql.gz
+
+Backup Summary for newbie.com at 2025-03-10 12:00:09.507635
+Config  : ./newbie.com/private/backups/20250310_120007-newbie_com-site_config_backup.json 158.0B
+Database: ./newbie.com/private/backups/20250310_120007-newbie_com-database.sql.gz         934.1KiB
+Backup for Site newbie.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_5cc9cae4542b37bb --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5cc9cae4542b37bb | /usr/bin/gzip >> ./bizpro.com/private/backups/20250310_180002-bizpro_com-database.sql.gz
+
+Backup Summary for bizpro.com at 2025-03-10 18:00:07.234904
+Config  : ./bizpro.com/private/backups/20250310_180002-bizpro_com-site_config_backup.json 221.0B
+Database: ./bizpro.com/private/backups/20250310_180002-bizpro_com-database.sql.gz         993.7KiB
+Backup for Site bizpro.com has been successfully completed
+File ./newbie.com/private/backups/20250310_120007-newbie_com-database.sql.gz is recent
+File ./newbie.com/private/backups/20250310_120007-newbie_com-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mysqldump --user=_27901665e79b2ed2 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _27901665e79b2ed2 | /usr/bin/gzip >> ./newbie.com/private/backups/20250310_180007-newbie_com-database.sql.gz
+
+Backup Summary for newbie.com at 2025-03-10 18:00:09.751074
+Config  : ./newbie.com/private/backups/20250310_180007-newbie_com-site_config_backup.json 158.0B
+Database: ./newbie.com/private/backups/20250310_180007-newbie_com-database.sql.gz         934.1KiB
+Backup for Site newbie.com has been successfully completed

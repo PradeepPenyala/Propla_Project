@@ -225,7 +225,7 @@
  ],
  "modified": "2023-08-29 15:48:59.010704",
  "modified_by": "Administrator",
- "module": "Bizpro Integrations",
+ "module": "ERPNext Integrations",
  "name": "Bizpro Integrations",
  "number_cards": [],
  "owner": "Administrator",
@@ -241,7 +241,7 @@
    "doc_view": "List",
    "label": "Browse Apps",
    "type": "URL",
-   "url": "http://bizpro.com:8000/"
+   "url": "https://frappecloud.com/marketplace"
   }
  ],
  "title": "Bizpro Integrations"

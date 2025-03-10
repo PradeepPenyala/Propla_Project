@@ -2,8 +2,8 @@ import os
 
 from . import __version__ as app_version
 
-app_name = "Bizpro"
-app_title = "Bizpro"
+app_name = "Bizpro App"
+app_title = "Bizpro App"
 app_publisher = "Frappe Technologies"
 app_description = "Full stack web framework with Python, Javascript, MariaDB, Redis, Node"
 app_license = "MIT"

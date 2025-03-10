@@ -8960,7 +8960,7 @@ Die Funktionen des CRM-Moduls sind je nach Ihren geschäftlichen Anforderungen k
 - Angebot",
 "# Chart Of Accounts
 
-ERPNext sets up a simple chart of accounts for each Company you create, but you can modify it according to business and legal requirements.","# Kontenplan
+Bizpro sets up a simple chart of accounts for each Company you create, but you can modify it according to business and legal requirements.","# Kontenplan
 
 ERPNext erstellt ein einfaches Kontendiagramm für jede von Ihnen erstellte Firma, aber Sie können es entsprechend den geschäftlichen und rechtlichen Anforderungen ändern.",
 "# Check Stock Reports

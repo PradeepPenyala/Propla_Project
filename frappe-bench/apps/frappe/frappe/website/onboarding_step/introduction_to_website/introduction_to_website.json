@@ -15,5 +15,6 @@
  "show_full_form": 0,
  "title": "Introduction to Website",
  "validate_action": 0,
- "video_url": "https://www.youtube.com/watch?v=lyW6mfFBSNw"
+ // "video_url": "https://www.youtube.com/watch?v=lyW6mfFBSNw"
+ "video_url": "http://bizpro.com:8000/app/accounting"
 }
