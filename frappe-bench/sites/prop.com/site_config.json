@@ -1,0 +1,9 @@
+{
+ "db_name": "propla",
+ "db_password": "Propla@123",
+ "db_type": "mariadb",
+
+ "user_type_doctype_limit": {
+  "employee_self_service": 40
+ }
+}

@@ -1,0 +1,7 @@
+#!/bin/bash
+PROJECT_PATH=$(pwd)
+
+export PYTHONPATH=$PYTHONPATH:$PROJECT_PATH/apps/frappe
+export PYTHONPATH=$PYTHONPATH:$PROJECT_PATHh/apps/erpnext
+export PYTHONPATH=$PYTHONPATH:$PROJECT_PATH/apps/hrms
+export PYTHONPATH=$PYTHONPATH:$PROJECT_PATH/apps/helpdesk
