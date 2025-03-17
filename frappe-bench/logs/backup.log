@@ -4643,3 +4643,47 @@ Backup Summary for newbie.com at 2025-03-13 12:00:09.762342
 Config  : ./newbie.com/private/backups/20250313_120007-newbie_com-site_config_backup.json 158.0B
 Database: ./newbie.com/private/backups/20250313_120007-newbie_com-database.sql.gz         935.8KiB
 Backup for Site newbie.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_5cc9cae4542b37bb --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5cc9cae4542b37bb | /usr/bin/gzip >> ./bizpro.com/private/backups/20250313_180002-bizpro_com-database.sql.gz
+
+Backup Summary for bizpro.com at 2025-03-13 18:00:07.648033
+Config  : ./bizpro.com/private/backups/20250313_180002-bizpro_com-site_config_backup.json 221.0B
+Database: ./bizpro.com/private/backups/20250313_180002-bizpro_com-database.sql.gz         1021.9KiB
+Backup for Site bizpro.com has been successfully completed
+File ./newbie.com/private/backups/20250313_000006-newbie_com-database.sql.gz is recent
+File ./newbie.com/private/backups/20250313_000006-newbie_com-site_config_backup.json is recent
+File ./newbie.com/private/backups/20250313_120007-newbie_com-database.sql.gz is recent
+File ./newbie.com/private/backups/20250312_180007-newbie_com-site_config_backup.json is recent
+File ./newbie.com/private/backups/20250312_120006-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250313_060007-newbie_com-site_config_backup.json is recent
+File ./newbie.com/private/backups/20250313_060007-newbie_com-database.sql.gz is recent
+File ./newbie.com/private/backups/20250313_120007-newbie_com-site_config_backup.json is recent
+File ./newbie.com/private/backups/20250312_180007-newbie_com-database.sql.gz is recent
+File ./newbie.com/private/backups/20250312_120006-newbie_com-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mysqldump --user=_27901665e79b2ed2 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _27901665e79b2ed2 | /usr/bin/gzip >> ./newbie.com/private/backups/20250313_180007-newbie_com-database.sql.gz
+
+Backup Summary for newbie.com at 2025-03-13 18:00:09.659205
+Config  : ./newbie.com/private/backups/20250313_180007-newbie_com-site_config_backup.json 158.0B
+Database: ./newbie.com/private/backups/20250313_180007-newbie_com-database.sql.gz         935.8KiB
+Backup for Site newbie.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_5cc9cae4542b37bb --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5cc9cae4542b37bb | /usr/bin/gzip >> ./bizpro.com/private/backups/20250317_120002-bizpro_com-database.sql.gz
+
+Backup Summary for bizpro.com at 2025-03-17 12:00:08.379744
+Config  : ./bizpro.com/private/backups/20250317_120002-bizpro_com-site_config_backup.json 221.0B
+Database: ./bizpro.com/private/backups/20250317_120002-bizpro_com-database.sql.gz         1003.4KiB
+Backup for Site bizpro.com has been successfully completed
+File ./newbie.com/private/backups/20250313_000006-newbie_com-database.sql.gz is older than 24 hours
+File ./newbie.com/private/backups/20250313_000006-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250313_180007-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250313_120007-newbie_com-database.sql.gz is older than 24 hours
+File ./newbie.com/private/backups/20250312_180007-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250313_180007-newbie_com-database.sql.gz is older than 24 hours
+File ./newbie.com/private/backups/20250313_060007-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250313_060007-newbie_com-database.sql.gz is older than 24 hours
+File ./newbie.com/private/backups/20250313_120007-newbie_com-site_config_backup.json is older than 24 hours
+File ./newbie.com/private/backups/20250312_180007-newbie_com-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mysqldump --user=_27901665e79b2ed2 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _27901665e79b2ed2 | /usr/bin/gzip >> ./newbie.com/private/backups/20250317_120008-newbie_com-database.sql.gz
+
+Backup Summary for newbie.com at 2025-03-17 12:00:10.562177
+Config  : ./newbie.com/private/backups/20250317_120008-newbie_com-site_config_backup.json 158.0B
+Database: ./newbie.com/private/backups/20250317_120008-newbie_com-database.sql.gz         933.9KiB
+Backup for Site newbie.com has been successfully completed
