@@ -1,0 +1,2 @@
+import{o,e as c,w as r,g as d,h as t,_ as m}from"./index-8ec32bfa.js";import{I as u}from"./x-02366a76.js";const h={__name:"Pill",props:{label:{type:String,default:"Button",require:!0},disabled:{type:Boolean,default:!1}},emits:["click"],setup(e,{emit:i}){const s=i,n=a=>{s("click",a)};return(a,l)=>(o(),c(t(m),{key:e.label,theme:"gray",variant:"outline",label:e.label,disabled:e.disabled},{suffix:r(()=>[d(t(u),{class:"h-3 w-3",onClick:l[0]||(l[0]=b=>n(e.label))})]),_:1},8,["label","disabled"]))}};export{h as _};
+//# sourceMappingURL=Pill-8175bfd3.js.map
