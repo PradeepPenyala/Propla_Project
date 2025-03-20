@@ -2470,3 +2470,5 @@
 2025-03-18 18:19:38,195 INFO /home/mbr-python/.local/bin/bench schedule
 2025-03-18 18:19:38,199 INFO /home/mbr-python/.local/bin/bench worker
 2025-03-18 18:19:38,200 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2025-03-19 12:00:02,048 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2025-03-19 18:00:02,029 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
