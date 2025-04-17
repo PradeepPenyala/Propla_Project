@@ -1406,3 +1406,15 @@ alter table `tabDocType` add column if not exists migration_hash varchar(140)
 ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
 2025-03-18 18:19:22,830 WARNING database DDL Query made to DB:
 ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-04-17 17:47:03,386 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-04-17 17:47:04,522 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-04-17 17:47:05,183 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-04-17 17:50:18,534 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-04-17 17:50:19,119 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-04-17 17:50:19,693 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)

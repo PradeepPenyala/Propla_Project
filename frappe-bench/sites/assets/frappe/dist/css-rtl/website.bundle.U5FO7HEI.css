@@ -451,7 +451,7 @@
   --navbar-height: 48px;
   --icon-fill: transparent;
   --icon-fill-bg: var(--fg-color);
-  --icon-stroke: var(--gray-800);
+  --icon-stroke: #fff;
   --bg-blue: var(--blue-100);
   --bg-light-blue: var(--blue-50);
   --bg-dark-blue: var(--blue-300);
@@ -20352,7 +20352,7 @@ body.modal-open[style^=padding-right] header.navbar {
   --navbar-height: 48px;
   --icon-fill: transparent;
   --icon-fill-bg: var(--fg-color);
-  --icon-stroke: var(--gray-800);
+  --icon-stroke: #fff;
   --bg-blue: var(--blue-100);
   --bg-light-blue: var(--blue-50);
   --bg-dark-blue: var(--blue-300);
@@ -23145,7 +23145,7 @@ p {
   --navbar-height: 48px;
   --icon-fill: transparent;
   --icon-fill-bg: var(--fg-color);
-  --icon-stroke: var(--gray-800);
+  --icon-stroke: #fff;
   --bg-blue: var(--blue-100);
   --bg-light-blue: var(--blue-50);
   --bg-dark-blue: var(--blue-300);

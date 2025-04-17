@@ -148,7 +148,7 @@ frappe.views.Workspace = class Workspace {
 				item-public="${item.public || 0}"
 				item-is-hidden="${item.is_hidden || 0}"
 			>
-				<div class="desk-sidebar-item standard-sidebar-item ${item.selected ? "selected" : ""}">
+				<div class="desk-sidebar-item standard-sidebar-item main-navbargap ${item.selected ? "selected" : ""}" >
 					<a
 						href="/app/${
 							item.public
@@ -164,7 +164,7 @@ frappe.views.Workspace = class Workspace {
 									: `<span class="indicator ${item.indicator_color}"></span>`
 							}
 						</span>
-						<span class="sidebar-item-label">${__(item.title)}<span>
+						<span class="sidebar-item-label side-navbartext">${__(item.title)}<span>
 					</a>
 					<div class="sidebar-item-control"></div>
 				</div>

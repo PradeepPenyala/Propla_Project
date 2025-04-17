@@ -36198,10 +36198,16 @@
           "main",
           `
 				<div class="row layout-main">
-					<div class="col-lg-2 layout-side-section"></div>
-					<div class="col layout-main-section-wrapper">
-						<div class="layout-main-section"></div>
-						<div class="layout-footer hide"></div>
+					<div class="col-lg-1 layout-side-section main-navbars"></div>
+					<div class="col layout-main-section-wrapper" style="
+    background: #eff1ff;
+">
+						<div class="layout-main-section" style="
+    background: #eff1ff;
+"></div>
+						<div class="layout-footer hide" style="
+    background: #eff1ff;
+"></div>
 					</div>
 				</div>
 			`
@@ -44419,7 +44425,7 @@
 
   // frappe-html:/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/public/js/frappe/ui/toolbar/navbar.html
   frappe.templates["navbar"] = `<div class="sticky-top">
-	<header class="navbar navbar-expand" role="navigation">
+	<header class="navbar navbar-expand sticky-navv" role="navigation">
 		<div class="container">
 			<a class="navbar-brand navbar-home" href="/app">
 				<img
@@ -45878,7 +45884,7 @@
 				item-public="${item.public || 0}"
 				item-is-hidden="${item.is_hidden || 0}"
 			>
-				<div class="desk-sidebar-item standard-sidebar-item ${item.selected ? "selected" : ""}">
+				<div class="desk-sidebar-item standard-sidebar-item main-navbargap ${item.selected ? "selected" : ""}" >
 					<a
 						href="/app/${item.public ? frappe.router.slug(item.title) : "private/" + frappe.router.slug(item.title)}"
 						class="item-anchor ${item.is_editable ? "" : "block-click"}" title="${__(item.title)}"
@@ -45886,7 +45892,7 @@
 						<span class="sidebar-item-icon" item-icon=${item.icon || "folder-normal"}>
 							${item.public ? frappe.utils.icon(item.icon || "folder-normal", "md") : `<span class="indicator ${item.indicator_color}"></span>`}
 						</span>
-						<span class="sidebar-item-label">${__(item.title)}<span>
+						<span class="sidebar-item-label side-navbartext">${__(item.title)}<span>
 					</a>
 					<div class="sidebar-item-control"></div>
 				</div>

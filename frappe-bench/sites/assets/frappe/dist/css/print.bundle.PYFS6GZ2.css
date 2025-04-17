@@ -6090,7 +6090,7 @@ body {
   --navbar-height: 48px;
   --icon-fill: transparent;
   --icon-fill-bg: var(--fg-color);
-  --icon-stroke: var(--gray-800);
+  --icon-stroke: #fff;
   --bg-blue: var(--blue-100);
   --bg-light-blue: var(--blue-50);
   --bg-dark-blue: var(--blue-300);
@@ -6224,7 +6224,7 @@ body {
   --text-color: var(--gray-50);
   --heading-color: var(--gray-50);
   --icon-fill: transparent;
-  --icon-stroke: var(--gray-300);
+  --icon-stroke: #fff;
   --error-bg: var(--red-800);
   --error-border: var(--red-400);
   --bg-color: var(--gray-900);

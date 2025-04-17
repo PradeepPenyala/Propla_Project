@@ -1,0 +1,1007 @@
+2024-09-16 15:00:29,881 ERROR scheduler Exception in Enqueue Events for Site prop.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 234, in sql
+    self._cursor.execute(query, values)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'propla.tabSingles' doesn't exist")
+2024-09-16 15:01:29,883 ERROR scheduler Exception in Enqueue Events for Site prop.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 234, in sql
+    self._cursor.execute(query, values)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'propla.tabSingles' doesn't exist")
+2024-09-16 15:02:29,887 ERROR scheduler Exception in Enqueue Events for Site prop.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 234, in sql
+    self._cursor.execute(query, values)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'propla.tabSingles' doesn't exist")
+2024-09-16 15:03:29,896 ERROR scheduler Exception in Enqueue Events for Site prop.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 234, in sql
+    self._cursor.execute(query, values)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'propla.tabSingles' doesn't exist")
+2024-09-16 15:04:29,902 ERROR scheduler Exception in Enqueue Events for Site prop.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 234, in sql
+    self._cursor.execute(query, values)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'propla.tabSingles' doesn't exist")
+2024-09-16 15:05:29,906 ERROR scheduler Exception in Enqueue Events for Site prop.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_8b3e45756aa1c354'@'localhost' (using password: YES)")
+2024-09-17 16:58:55,086 ERROR scheduler Exception in Enqueue Events for Site prop.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 863, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 848, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2024-09-18 12:13:22,375 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for prop.com
+2024-09-18 12:13:22,504 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for prop.com
+2024-09-18 12:13:22,506 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for prop.com
+2024-09-18 12:13:22,507 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for prop.com
+2024-09-18 12:14:23,061 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for prop.com
+2024-09-18 12:14:23,181 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for prop.com
+2024-09-18 12:14:23,190 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for prop.com
+2024-09-18 12:14:23,192 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for prop.com
+2024-09-18 13:36:14,086 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for prop.com
+2024-09-18 13:36:14,132 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for prop.com
+2024-09-18 13:36:14,171 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for prop.com
+2024-09-18 13:36:14,173 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for prop.com
+2024-09-18 13:36:14,174 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for prop.com
+2024-09-18 13:36:14,177 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for prop.com
+2024-09-18 13:36:14,178 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for prop.com
+2024-09-18 13:36:14,180 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for prop.com
+2024-09-18 13:36:14,181 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for prop.com
+2024-09-18 13:36:14,183 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for prop.com
+2024-09-18 13:36:14,184 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for prop.com
+2024-09-18 13:36:14,186 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for prop.com
+2024-09-18 13:36:14,187 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for prop.com
+2024-09-27 10:37:50,643 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for prop.com
+2024-09-27 10:37:50,647 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for prop.com
+2024-09-27 10:37:50,649 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for prop.com
+2024-09-27 10:37:50,729 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for prop.com
+2024-09-27 10:37:50,732 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for prop.com
+2024-09-27 10:37:50,734 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for prop.com
+2024-09-27 10:37:50,736 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for prop.com
+2024-09-27 11:14:19,070 ERROR scheduler Skipped queueing helpdesk.search.build_index_if_not_exists because it was found in queue for prop.com
+2024-09-27 11:14:35,463 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for prop.com
+2024-09-27 11:17:19,804 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for prop.com
+2024-09-27 11:17:24,395 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for prop.com
+2024-09-27 11:17:34,617 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for prop.com
+2024-10-01 13:12:11,109 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for newbie.com
+2024-10-01 13:12:11,113 ERROR scheduler Skipped queueing hrms.hr.utils.allocate_earned_leaves because it was found in queue for newbie.com
+2024-10-01 13:12:11,116 ERROR scheduler Skipped queueing hrms.hr.utils.generate_leave_encashment because it was found in queue for newbie.com
+2024-10-01 13:12:11,118 ERROR scheduler Skipped queueing hrms.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation because it was found in queue for newbie.com
+2024-10-01 13:12:11,142 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newbie.com
+2024-10-01 13:12:11,145 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newbie.com
+2024-10-01 13:12:11,147 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_monthly because it was found in queue for newbie.com
+2024-10-01 13:12:11,149 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for newbie.com
+2024-10-01 13:12:11,152 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newbie.com
+2024-10-01 13:12:11,154 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for newbie.com
+2024-10-01 13:12:11,156 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for newbie.com
+2024-10-01 13:12:11,159 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for newbie.com
+2024-10-01 13:12:11,161 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for newbie.com
+2024-10-01 13:12:11,215 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for newbie.com
+2024-10-01 13:12:11,231 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for newbie.com
+2024-10-01 13:12:11,233 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for newbie.com
+2024-10-01 13:12:11,235 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for newbie.com
+2024-10-01 13:12:11,237 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for newbie.com
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       2024-10-08 10:55:01,075 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for newbie.com
+2024-10-08 10:55:01,098 ERROR scheduler Skipped queueing hrms.hr.utils.allocate_earned_leaves because it was found in queue for newbie.com
+2024-10-08 10:55:01,100 ERROR scheduler Skipped queueing hrms.hr.utils.generate_leave_encashment because it was found in queue for newbie.com
+2024-10-08 10:55:01,103 ERROR scheduler Skipped queueing hrms.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation because it was found in queue for newbie.com
+2024-10-08 10:55:01,126 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newbie.com
+2024-10-08 10:55:01,129 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newbie.com
+2024-10-08 10:55:01,135 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newbie.com
+2024-10-08 10:55:01,137 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for newbie.com
+2024-10-08 10:55:01,139 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for newbie.com
+2024-10-08 10:55:01,142 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for newbie.com
+2024-10-08 10:55:01,144 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for newbie.com
+2024-10-08 10:55:01,209 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for newbie.com
+2024-10-08 10:55:01,211 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for newbie.com
+2024-10-08 10:55:01,214 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for newbie.com
+2024-10-08 10:55:01,216 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for newbie.com
+2024-10-08 10:55:01,374 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for prop.com
+2024-10-08 10:55:01,427 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for prop.com
+2024-10-08 10:55:01,429 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for prop.com
+2025-02-26 11:56:16,832 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for prop.com
+2025-02-26 11:56:16,836 ERROR scheduler Skipped queueing hrms.hr.utils.allocate_earned_leaves because it was found in queue for prop.com
+2025-02-26 11:56:16,838 ERROR scheduler Skipped queueing hrms.hr.utils.generate_leave_encashment because it was found in queue for prop.com
+2025-02-26 11:56:16,840 ERROR scheduler Skipped queueing hrms.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation because it was found in queue for prop.com
+2025-02-26 11:56:16,852 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for prop.com
+2025-02-26 11:56:16,854 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for prop.com
+2025-02-26 11:56:16,856 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_monthly because it was found in queue for prop.com
+2025-02-26 11:56:16,858 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for prop.com
+2025-02-26 11:56:16,859 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for prop.com
+2025-02-26 11:56:16,861 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for prop.com
+2025-02-26 11:56:16,862 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for prop.com
+2025-02-26 11:56:16,864 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for prop.com
+2025-02-26 11:56:16,865 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for prop.com
+2025-02-26 11:56:16,905 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for prop.com
+2025-02-26 11:56:16,909 ERROR scheduler Skipped queueing frappe.desk.doctype.changelog_feed.changelog_feed.fetch_changelog_feed because it was found in queue for prop.com
+2025-02-26 11:56:16,910 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for prop.com
+2025-02-26 11:56:16,912 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for prop.com
+2025-02-26 11:56:16,913 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for prop.com
+2025-02-26 11:56:16,915 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for prop.com
+2025-02-26 11:56:16,916 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for prop.com
+2025-02-26 11:56:16,918 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for prop.com
+2025-02-26 11:56:16,920 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for prop.com
+2025-02-26 11:56:16,921 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for prop.com
+2025-02-26 11:56:16,923 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for prop.com
+2025-02-26 11:56:16,925 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for prop.com
+2025-02-26 14:43:01,322 ERROR scheduler Exception in Enqueue Events for Site bizpro.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 844, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 1360, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/document.py", line 172, in load_from_db
+    frappe.throw(
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 645, in throw
+    msgprint(
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 610, in msgprint
+    _raise_exception()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 561, in _raise_exception
+    raise exc
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2025-02-26 14:44:01,358 ERROR scheduler Exception in Enqueue Events for Site bizpro.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 844, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 1360, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/document.py", line 172, in load_from_db
+    frappe.throw(
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 645, in throw
+    msgprint(
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 610, in msgprint
+    _raise_exception()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 561, in _raise_exception
+    raise exc
+frappe.exceptions.DoesNotExistError: DocType System Settings not found
+2025-02-26 15:04:08,197 ERROR scheduler Exception in Enqueue Events for Site bizpro.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_5cc9cae4542b37bb'@'localhost' (using password: YES)")
+2025-02-26 15:05:08,323 ERROR scheduler Exception in Enqueue Events for Site bizpro.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_5cc9cae4542b37bb'@'localhost' (using password: YES)")
+2025-02-26 15:06:08,329 ERROR scheduler Exception in Enqueue Events for Site bizpro.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_5cc9cae4542b37bb'@'localhost' (using password: YES)")
+2025-02-26 15:07:08,482 ERROR scheduler Exception in Enqueue Events for Site bizpro.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_5cc9cae4542b37bb'@'localhost' (using password: YES)")
+2025-02-26 15:08:08,791 ERROR scheduler Exception in Enqueue Events for Site bizpro.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_5cc9cae4542b37bb'@'localhost' (using password: YES)")
+2025-02-26 15:09:08,957 ERROR scheduler Exception in Enqueue Events for Site bizpro.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_5cc9cae4542b37bb'@'localhost' (using password: YES)")
+2025-03-03 10:30:33,792 ERROR scheduler Skipped queueing hrms.controllers.employee_reminders.send_reminders_in_advance_weekly because it was found in queue for bizpro.com
+2025-03-03 10:30:33,796 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for bizpro.com
+2025-03-03 10:30:33,799 ERROR scheduler Skipped queueing hrms.controllers.employee_reminders.send_reminders_in_advance_monthly because it was found in queue for bizpro.com
+2025-03-03 10:30:33,801 ERROR scheduler Skipped queueing hrms.hr.utils.allocate_earned_leaves because it was found in queue for bizpro.com
+2025-03-03 10:30:33,804 ERROR scheduler Skipped queueing hrms.hr.utils.generate_leave_encashment because it was found in queue for bizpro.com
+2025-03-03 10:30:33,807 ERROR scheduler Skipped queueing hrms.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation because it was found in queue for bizpro.com
+2025-03-03 10:30:33,809 ERROR scheduler Skipped queueing hrms.hr.doctype.job_opening.job_opening.close_expired_job_openings because it was found in queue for bizpro.com
+2025-03-03 10:30:33,812 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_daily_feedback_reminder because it was found in queue for bizpro.com
+2025-03-03 10:30:33,815 ERROR scheduler Skipped queueing hrms.hr.doctype.daily_work_summary_group.daily_work_summary_group.send_summary because it was found in queue for bizpro.com
+2025-03-03 10:30:33,818 ERROR scheduler Skipped queueing hrms.controllers.employee_reminders.send_work_anniversary_reminders because it was found in queue for bizpro.com
+2025-03-03 10:30:33,821 ERROR scheduler Skipped queueing hrms.controllers.employee_reminders.send_birthday_reminders because it was found in queue for bizpro.com
+2025-03-03 10:30:33,823 ERROR scheduler Skipped queueing hrms.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails because it was found in queue for bizpro.com
+2025-03-03 10:30:33,826 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for bizpro.com
+2025-03-03 10:30:33,829 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_weekly because it was found in queue for bizpro.com
+2025-03-03 10:30:33,832 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for bizpro.com
+2025-03-03 10:30:33,834 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for bizpro.com
+2025-03-03 10:30:33,837 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_monthly because it was found in queue for bizpro.com
+2025-03-03 10:30:33,839 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for bizpro.com
+2025-03-03 10:30:33,842 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for bizpro.com
+2025-03-03 10:30:33,845 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for bizpro.com
+2025-03-03 10:30:33,847 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for bizpro.com
+2025-03-03 10:30:33,850 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for bizpro.com
+2025-03-03 10:30:33,853 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for bizpro.com
+2025-03-03 10:30:33,856 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset_maintenance_log.asset_maintenance_log.update_asset_maintenance_log_status because it was found in queue for bizpro.com
+2025-03-03 10:30:33,859 ERROR scheduler Skipped queueing erpnext.accounts.utils.run_ledger_health_checks because it was found in queue for bizpro.com
+2025-03-03 10:30:33,862 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_daily because it was found in queue for bizpro.com
+2025-03-03 10:30:33,865 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for bizpro.com
+2025-03-03 10:30:33,867 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for bizpro.com
+2025-03-03 10:30:33,870 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for bizpro.com
+2025-03-03 10:30:33,873 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for bizpro.com
+2025-03-03 10:30:33,875 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for bizpro.com
+2025-03-03 10:30:33,878 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for bizpro.com
+2025-03-03 10:30:33,881 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for bizpro.com
+2025-03-03 10:30:33,883 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for bizpro.com
+2025-03-03 10:30:33,886 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for bizpro.com
+2025-03-03 10:30:33,889 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for bizpro.com
+2025-03-03 10:30:33,891 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for bizpro.com
+2025-03-03 10:30:33,894 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for bizpro.com
+2025-03-03 10:30:33,897 ERROR scheduler Skipped queueing erpnext.setup.doctype.company.company.cache_companies_monthly_sales_history because it was found in queue for bizpro.com
+2025-03-03 10:30:33,900 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for bizpro.com
+2025-03-03 10:30:33,902 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for bizpro.com
+2025-03-03 10:30:33,905 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for bizpro.com
+2025-03-03 10:30:33,908 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for bizpro.com
+2025-03-03 10:30:33,910 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for bizpro.com
+2025-03-03 10:30:33,913 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for bizpro.com
+2025-03-03 10:30:33,916 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for bizpro.com
+2025-03-03 10:30:33,918 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for bizpro.com
+2025-03-03 10:30:33,921 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for bizpro.com
+2025-03-03 10:30:33,924 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for bizpro.com
+2025-03-03 10:30:33,927 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for bizpro.com
+2025-03-03 10:30:33,929 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for bizpro.com
+2025-03-03 10:30:33,932 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for bizpro.com
+2025-03-03 10:30:33,935 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for bizpro.com
+2025-03-03 10:30:33,938 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for bizpro.com
+2025-03-03 10:30:33,941 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for bizpro.com
+2025-03-03 10:30:33,943 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for bizpro.com
+2025-03-03 10:30:33,946 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_monthly_summary because it was found in queue for bizpro.com
+2025-03-03 10:30:33,949 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_monthly because it was found in queue for bizpro.com
+2025-03-03 10:30:33,951 ERROR scheduler Skipped queueing frappe.desk.doctype.changelog_feed.changelog_feed.fetch_changelog_feed because it was found in queue for bizpro.com
+2025-03-03 10:30:33,954 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for bizpro.com
+2025-03-03 10:30:33,957 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for bizpro.com
+2025-03-03 10:30:33,959 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for bizpro.com
+2025-03-03 10:30:33,961 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for bizpro.com
+2025-03-03 10:30:33,963 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for bizpro.com
+2025-03-03 10:30:33,965 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for bizpro.com
+2025-03-03 10:30:33,966 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for bizpro.com
+2025-03-03 10:30:33,968 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for bizpro.com
+2025-03-03 10:30:33,970 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for bizpro.com
+2025-03-03 10:30:33,973 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for bizpro.com
+2025-03-03 10:30:33,975 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed because it was found in queue for bizpro.com
+2025-03-03 10:30:33,977 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for bizpro.com
+2025-03-03 10:30:33,980 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for bizpro.com
+2025-03-03 10:30:33,982 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for bizpro.com
+2025-03-03 10:30:33,984 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for bizpro.com
+2025-03-03 10:30:33,986 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for bizpro.com
+2025-03-03 10:30:33,989 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for bizpro.com
+2025-03-03 10:30:33,991 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for bizpro.com
+2025-03-03 10:30:33,993 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for bizpro.com
+2025-03-03 10:30:33,995 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for bizpro.com
+2025-03-03 10:30:33,997 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for bizpro.com
+2025-03-03 10:30:33,998 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for bizpro.com
+2025-03-03 10:30:34,000 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for bizpro.com
+2025-03-03 10:30:34,002 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for bizpro.com
+2025-03-03 10:30:34,004 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for bizpro.com
+2025-03-03 10:30:34,005 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for bizpro.com
+2025-03-03 10:30:34,007 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for bizpro.com
+2025-03-03 10:30:34,009 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for bizpro.com
+2025-03-03 10:30:34,011 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for bizpro.com
+2025-03-03 10:30:34,013 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for bizpro.com
+2025-03-03 10:30:34,015 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for bizpro.com
+2025-03-03 10:30:34,017 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for bizpro.com
+2025-03-03 10:30:34,019 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for bizpro.com
+2025-03-03 10:30:34,021 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for bizpro.com
+2025-03-03 10:30:34,023 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for bizpro.com
+2025-03-03 10:30:34,025 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for bizpro.com
+2025-03-03 10:30:34,027 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for bizpro.com
+2025-03-03 10:30:34,029 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for bizpro.com
+2025-03-03 10:30:34,031 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for bizpro.com
+2025-03-10 10:13:16,582 ERROR scheduler Skipped queueing hrms.hr.utils.generate_leave_encashment because it was found in queue for bizpro.com
+2025-03-10 10:13:16,782 ERROR scheduler Skipped queueing hrms.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation because it was found in queue for bizpro.com
+2025-03-10 10:13:16,798 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for bizpro.com
+2025-03-10 10:13:16,800 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for bizpro.com
+2025-03-10 10:13:16,805 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for bizpro.com
+2025-03-10 10:13:16,807 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for bizpro.com
+2025-03-10 10:13:16,809 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for bizpro.com
+2025-03-10 10:13:16,811 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for bizpro.com
+2025-03-10 10:13:16,813 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for bizpro.com
+2025-03-10 10:13:16,865 ERROR scheduler Skipped queueing frappe.desk.doctype.changelog_feed.changelog_feed.fetch_changelog_feed because it was found in queue for bizpro.com
+2025-03-10 10:13:16,881 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for bizpro.com
+2025-03-10 10:13:16,883 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for bizpro.com
+2025-03-10 10:13:16,885 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for bizpro.com
+2025-03-10 10:13:16,887 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for bizpro.com
+2025-03-10 10:13:16,889 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for bizpro.com
+2025-03-10 10:13:16,890 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for bizpro.com
+2025-03-10 10:13:16,892 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for bizpro.com
+2025-03-10 10:13:16,894 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for bizpro.com
+2025-03-10 10:13:16,895 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for bizpro.com
+2025-03-10 10:13:16,897 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for bizpro.com
+2025-03-10 13:50:34,832 ERROR scheduler Exception in Enqueue Events for Site newbie.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 863, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 848, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-03-10 13:50:34,905 ERROR scheduler Exception in Enqueue Events for Site bizpro.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 863, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 848, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-04-17 16:47:20,934 ERROR scheduler Exception in Enqueue Events for Site newbie.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_27901665e79b2ed2'@'localhost' (using password: YES)")
+2025-04-17 16:48:21,089 ERROR scheduler Exception in Enqueue Events for Site newbie.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 841, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 211, in sql
+    self.connect()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 116, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mbr-python/Documents/testerp/Project_E/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_27901665e79b2ed2'@'localhost' (using password: YES)")

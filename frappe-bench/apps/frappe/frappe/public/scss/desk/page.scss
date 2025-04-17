@@ -102,6 +102,7 @@
 	background: var(--bg-color);
 	margin-bottom: 5px;
 	transition: 0.5s top;
+	display: none;
 	.page-head-content {
 		height: var(--page-head-height);
 		padding: 8px 0px;

@@ -5588,7 +5588,7 @@ body {
   --navbar-height: 48px;
   --icon-fill: transparent;
   --icon-fill-bg: var(--fg-color);
-  --icon-stroke: var(--gray-800);
+  --icon-stroke: #fff;
   --bg-blue: var(--blue-100);
   --bg-light-blue: var(--blue-50);
   --bg-dark-blue: var(--blue-300);
@@ -16404,7 +16404,7 @@ body {
 }
 @media (min-width: 768px) {
   body.full-width .container {
-    width: 90%;
+    width: 100%;
     max-width: 100%;
   }
 }
@@ -16813,7 +16813,8 @@ kbd {
 .standard-sidebar .standard-sidebar-item.selected,
 .desk-sidebar .standard-sidebar-item.selected,
 .search-dialog .search-results .search-sidebar .standard-sidebar-item.selected {
-  background-color: var(--sidebar-select-color);
+  /* background-color: var(--sidebar-select-color); */
+  background-color: #5e56c9;
 }
 .standard-sidebar .standard-sidebar-item > a,
 .desk-sidebar .standard-sidebar-item > a,
@@ -19335,6 +19336,7 @@ div#driver-popover-item .driver-popover-footer .page-actions button.driver-prev-
   background: var(--bg-color);
   margin-bottom: 5px;
   transition: 0.5s top;
+  display: none;
 }
 .page-head .page-head-content {
   height: var(--page-head-height);
@@ -20974,7 +20976,8 @@ div#driver-popover-item .driver-popover-footer .onboarding-success button {
 }
 @media (min-width: 992px) {
   [data-page-route=Workspaces] .layout-main {
-    height: calc(100vh - var(--navbar-height) - var(--page-head-height) - 5px);
+    /* height: calc(100vh - var(--navbar-height) - var(--page-head-height) - 5px); */
+    height: 94.7vh;
   }
   [data-page-route=Workspaces] .layout-main .layout-side-section,
   [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
@@ -21232,6 +21235,7 @@ div#driver-popover-item .driver-popover-footer .onboarding-success button {
 }
 [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content > div {
   height: 100%;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .tune-btn > * {
   pointer-events: none;
@@ -28618,3 +28622,18 @@ div#driver-popover-item .driver-popover-footer .chart-column-container button {
  */
 /*! This comment will be included even in compressed mode. */
 /*# sourceMappingURL=desk.bundle.FEDW2QGF.css.map */
+
+.main-navbars{
+  background: #10163A;
+}
+.side-navbartext {
+  color: #f9f9f9 !important;
+  font-weight: 300 !important;
+}
+.main-navbargap {
+  padding: 5px !important;
+}
+.sticky-navv{
+  background: #10163A !important;
+}
+

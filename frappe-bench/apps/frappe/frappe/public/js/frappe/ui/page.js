@@ -98,10 +98,16 @@ frappe.ui.Page = class Page {
 				"main",
 				`
 				<div class="row layout-main">
-					<div class="col-lg-2 layout-side-section"></div>
-					<div class="col layout-main-section-wrapper">
-						<div class="layout-main-section"></div>
-						<div class="layout-footer hide"></div>
+					<div class="col-lg-1 layout-side-section main-navbars"></div>
+					<div class="col layout-main-section-wrapper" style="
+    background: #eff1ff;
+">
+						<div class="layout-main-section" style="
+    background: #eff1ff;
+"></div>
+						<div class="layout-footer hide" style="
+    background: #eff1ff;
+"></div>
 					</div>
 				</div>
 			`
